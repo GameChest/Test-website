@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Python in HTML mit PyScript</title>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-</head>
-<body>
-    <h1>Python im Browser ausführen</h1>
-    <py-script>
-        # Python-Code hier direkt
-        print("Hallo von Python!")
-    </py-script>
-</body>
+<html>
+    <head>
+        <title>Running a Python script</title>
+        <?PHP
+        echo shell_exec("python script.py");
+        ?>
+        </head>
+    <body>
+        <!-- BODY -->
+    </body>
 </html>
